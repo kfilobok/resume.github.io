@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          crossorigin="anonymous">
+    <link rel="stylesheet" href="static/css/custom.css">
+    <title>Портфолио | Резюме</title>
+</head>
+<body>
+<!-- Переключатели темы и языка -->
+<div class="d-flex justify-content-end p-3">
+    <button id="theme-toggle" class="btn btn-sm btn-yellow me-2">🌓</button>
+    {#    <button id="theme-toggle" class="btn btn-sm btn-yellow me-2" data-lang="en">Change theme</button>#}
+    <button id="language-toggle" class="btn btn-sm btn-yellow">EN</button>
+</div>
+
+<!-- Секция промо с темным фоном - шапка сайта -->
+<section class="promo dark-bg pt-2 pb-5">
+    <div class="container">
+        <!-- Навигационная панель с логотипом и кнопкой -->
+        <nav class="navbar navbar-expand-lg mb-5 navbar-dark">
+            <div class="container-fluid">
+                <a href="#" class="navbar-brand logo d-flex align-items-center text-decoration-none">
+                    <div class="logo-left pe-2">
+                        <img src="../static/01_Logo_HSE_full_rus_PANTONE_for_dark_2.png" alt="" class="rounded-circle"
+                             width="70">
+                    </div>
+                    <div class="logo-right" style="margin-left: 6px;">
+                        <div class="logo-title link-purple" data-lang="ru">Резюме</div>
+                        <div class="logo-title link-purple" data-lang="en" style="display:none;">Resume</div>
+                        <div class="logo-subtitle text-yellow" data-lang="ru">По заказу Deep Python</div>
+                        <div class="logo-subtitle text-yellow" data-lang="en" style="display:none;">Commissioned by Deep
+                            Python
+                        </div>
+                    </div>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- Меню навигации -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="nav m-auto">
+                        <li class="nav-item mx-3">
+                            <a href="#story" class="nav-link link-purple link-border-bottom" data-lang="ru">Вкратце обо
+                                мне</a>
+                            <a href="#story" class="nav-link link-purple link-border-bottom" data-lang="en"
+                               style="display:none;">About Me</a>
+                        </li>
+                        <li class="nav-item mx-3">
+                            <a href="#projects" class="nav-link link-purple link-border-bottom" data-lang="ru">Мой опыт
+                                работы</a>
+                            <a href="#projects" class="nav-link link-purple link-border-bottom" data-lang="en"
+                               style="display:none;">My Experience</a>
+                        </li>
+                        <li class="nav-item mx-3">
+                            <a href="#contact" class="nav-link link-purple link-border-bottom" data-lang="ru">Сотрудничество</a>
+                            <a href="#contact" class="nav-link link-purple link-border-bottom" data-lang="en"
+                               style="display:none;">Collaboration</a>
+                        </li>
+                    </ul>
+                    <ul class="nav ml-auto">
+                        <li class="nav-item mx-3">
+                            <a href="https://github.com/kfilobok"
+                               class="nav-link link-purple link-border-bottom">Github</a>
+                        </li>
+                        <li class="nav-item mx-3 mr-0">
+                            <a href="#contact" class="nav-link link-purple link-border-bottom" data-lang="ru">Написать
+                                мне</a>
+                            <a href="#contact" class="nav-link link-purple link-border-bottom" data-lang="en"
+                               style="display:none;">Contact Me</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Блок приветствия с основной информацией -->
+        <div class="row py-0 py-sm-5">
+            <div class="col-12 col-lg-8 offset-lg-2 mb-0 mb-sm-5 py-5">
+                <h1 class="h1 font-weight-bold font greeting-text text-blue" data-lang="ru">Привет!</h1>
+                <h1 class="h1 font-weight-bold font greeting-text text-blue" data-lang="en" style="display:none;">
+                    Hi!</h1>
+                <p class="promo-text pb-3" data-lang="ru">Я&nbsp;&mdash; Филобок Екатерина&nbsp;&mdash; бекенд
+                    разработчик и студент ВШЭ</p>
+                <p class="promo-text pb-3" data-lang="en" style="display:none;">I'm&nbsp;&mdash; Filobok Ekaterina&nbsp;&mdash;
+                    backend developer and student of the Higher School of
+                    Economics...</p>
+                <a href="#contact" class="btn text-center" style="background-color: #DCFF05; color: #102D69"
+                   data-lang="ru">Написать мне</a>
+                <a href="#contact" class="btn text-center"
+                   style="background-color: #DCFF05; color: #102D69; display:none;" data-lang="en">Contact Me</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Секция "Обо мне" -->
+<section class="story container py-5 text-center" id="story">
+    <h2 class="h1 font-weight-bold mt-4 mb-3 mb-sm-5 pb-3 navigo-font" data-lang="ru">Обо мне</h2>
+    <h2 class="h1 font-weight-bold mt-4 mb-3 mb-sm-5 pb-3 navigo-font" data-lang="en" style="display:none;">About
+        Me</h2>
+    <div class="row">
+        <div class="col-12 col-sm-8 offset-sm-2 px-2 pb-5">
+            <p class="font-weight-bold pb-4" data-lang="ru">В настоящий момент учусь на Прикладной Математике и
+                Информатике в Высшей школе на 2 курсе (год окончания 2027), увлекаюсь математикой и хочу развиваться в
+                этой сфере</p>
+            <p class="font-weight-bold pb-4" data-lang="en" style="display:none;">I am currently studying Applied
+                Mathematics and Computer Science at a Higher School in my 2nd year (graduation year 2027), I am
+                interested in mathematics and want to develop in this area</p>
+        </div>
+    </div>
+</section>
+
+<!-- Секция опыта работы -->
+<section class="projects dark-bg pt-3 pt-sm-5 pb-3" id="projects">
+    <div class="container">
+        <h2 class="h1 font-weight-bold text-center mt-4 mt-sm-5 mb-0 mb-sm-4 pb-5 navigo-font" data-lang="ru">Мой опыт
+            работы</h2>
+        <h2 class="h1 font-weight-bold text-center mt-4 mt-sm-5 mb-0 mb-sm-4 pb-5 navigo-font" data-lang="en"
+            style="display:none;">My Work Experience</h2>
+        <div class="work-experience text-white">
+            <div class="d-flex align-items-center mb-4">
+                {#            <img src="../static/01_Logo_HSE_full_rus_PANTONE_for_dark_2.png" alt="HSE Logo" class="me-3" style="height: 60px; margin-top: -6px;">#}
+                <div class="d-flex flex-column justify-content-center">
+                    <h3 class="h4 mb-1" data-lang="ru">ООО Телематика</h3>
+                    <h3 class="h4 mb-1" data-lang="en" style="display:none;">LLC Telematika</h3>
+                    <p class="text-white-40 mb-0" data-lang="ru">01.07.2024 – Настоящее время</p>
+                    <p class="text-white-40 mb-0" data-lang="en" style="display:none;">01.07.2024 – Present</p>
+                </div>
+
+            </div>
+            <div class="position mb-4" style="margin-left: 20px;">
+                <h4 class="h5 text-purple" data-lang="ru">Бэкенд-разработчик на Go</h4>
+                <h4 class="h5 text-purple" data-lang="en" style="display:none;">Backend developer in Go</h4>
+                {#                    <p class="text-white" style="opacity: 0.4" data-lang="ru">01.11.2024 – настоящее время</p>#}
+                {#                    <p class="text-white" style="opacity: 0.4" data-lang="en" style="display:none;">01.11.2024 –#}
+                {#                        Present</p>#}
+                <p data-lang="ru">Разрабатываю микросервисы на go для банкоматов.</p>
+                <p data-lang="en" style="display:none;">I am developing microservices in go for ATMs.</p>
+            </div>
+            <div class="d-flex align-items-center mb-4">
+                <img src="../static/01_Logo_HSE_full_rus_PANTONE_for_dark_2.png" alt="HSE Logo" class="me-3"
+                     style="height: 60px; margin-top: -6px;">
+                <div class="d-flex flex-column justify-content-center">
+                    <h3 class="h4 mb-1" data-lang="ru">НИУ «ВШЭ»</h3>
+                    <h3 class="h4 mb-1" data-lang="en" style="display:none;">HSE University</h3>
+                    <p class="text-white-40 mb-0" data-lang="ru">01.11.2024 – 10.12.2024 </p>
+                    <p class="text-white-40 mb-0" data-lang="en" style="display:none;">01.11.2024 – 10.12.2024</p>
+                </div>
+            </div>
+            <div class="position mb-4" style="margin-left: 20px;">
+                <h4 class="h5 text-purple" data-lang="ru">Ассистент по алгоритмам и структурам данных</h4>
+                <h4 class="h5 text-purple" data-lang="en" style="display:none;">Assistant for Algorithms and Data
+                    Structures</h4>
+                <p class="text-white" style="opacity: 0.4" data-lang="ru">01.11.2024 – 10.12.2024</p>
+                <p class="text-white" style="opacity: 0.4" data-lang="en" style="display:none;">01.11.2024 –
+                    10.12.2024</p>
+                <p data-lang="ru">Помогаю студентам с возникающими вопросами по курсу.</p>
+                <p data-lang="en" style="display:none;">Helping students with any questions they may have about the
+                    course.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Секция личных целей -->
+<section class="goals container pt-3 pt-sm-5 pb-3">
+    <h2 class="h2 font-weight-bold my-4" data-lang="ru">Мои цели</h2>
+    <h2 class="h2 font-weight-bold my-4" data-lang="en" style="display:none;">My Goals</h2>
+    <div class="row">
+        <div class="col-12 col-sm-8 pb-1">
+            <p class="pb-2" data-lang="ru">Не отчислиться</p>
+            <p class="pb-2" data-lang="en" style="display:none;">Don't drop out of university</p>
+        </div>
+    </div>
+</section>
+
+<!-- Секция сотрудничества -->
+<section class="goals container mb-5 pb-sm-5 pb-0" id="contact">
+    <h2 class="h2 font-weight-bold my-4" data-lang="ru">Сотрудничество</h2>
+    <h2 class="h2 font-weight-bold my-4" data-lang="en" style="display:none;">Collaboration</h2>
+    <div class="row">
+        <div class="col-12 col-sm-8 pb-1">
+            <p class="pb-1 mb-1" data-lang="ru">С предложением вакансий пишите:</p>
+            <p class="pb-1 mb-1" data-lang="en" style="display:none;">Write with a vacancy offer:</p>
+            <div class="row">
+                <div class="col-12 col-sm-9">
+                    <p class="d-flex justify-content-start gap-2 flex-wrap">
+                        <a href="https://t.me/kati4kaf" class="btn mb-3"
+                           style="background-color: #DCFF05; color: #102D69" target="_blank" data-lang="ru">Написать в
+                            Telegram</a>
+                        <a href="https://t.me/kati4kaf" class="btn mb-3"
+                           style="background-color: #DCFF05; color: #102D69; display:none;" target="_blank"
+                           data-lang="en">Write in Telegram</a>
+                        <!--<a href="https://example.com/" class="btn mb-3" style="background-color: #DCFF05; color: #102D69" target="_blank" data-lang="ru">Посмотреть резюме</a>
+                        <a href="https://example.com/" class="btn mb-3" style="background-color: #DCFF05; color: #102D69; display:none;" target="_blank" data-lang="en">View Resume</a>
+                        <a href="mailto:any@example.com" class="btn mb-3" style="background-color: #DCFF05; color: #102D69" target="_blank" data-lang="ru">Написать на почту</a>
+                        <a href="mailto:any@example.com" class="btn mb-3" style="background-color: #DCFF05; color: #102D69; display:none;" target="_blank" data-lang="en">Write via Email</a>
+                      -->
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Подвал сайта с темным фоном -->
+<footer class="footer dark-bg">
+    <nav class="container navbar">
+        <ul class="nav m-auto py-2">
+            <li class="nav-item mx-3" data-lang="ru">Сделано с любовью в 2024 году.</li>
+            <li class="nav-item mx-3" data-lang="en" style="display:none;">Made with love in 2024.</li>
+        </ul>
+    </nav>
+</footer>
+
+<!-- Подключение скриптов Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        // Темная тема
+        const themeToggle = document.getElementById('theme-toggle');
+        const currentTheme = localStorage.getItem('theme') || 'light';
+        document.body.classList.toggle('dark-mode', currentTheme === 'dark');
+
+        themeToggle.addEventListener('click', () => {
+            const isDarkMode = document.body.classList.toggle('dark-mode');
+            localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
+        });
+
+        // Мультиязычность
+        const languageToggle = document.getElementById('language-toggle');
+        let currentLanguage = localStorage.getItem('language') || 'ru';
+        updateLanguage(currentLanguage);
+
+        languageToggle.addEventListener('click', () => {
+            currentLanguage = currentLanguage === 'ru' ? 'en' : 'ru';
+            localStorage.setItem('language', currentLanguage);
+            updateLanguage(currentLanguage);
+        });
+
+        function updateLanguage(lang) {
+            document.querySelectorAll('[data-lang]').forEach(el => {
+                el.style.display = el.getAttribute('data-lang') === lang ? '' : 'none';
+            });
+            languageToggle.textContent = lang === 'ru' ? 'EN' : 'RU';
+        }
+    });
+
+</script>
+</body>
+</html>
